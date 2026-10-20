@@ -1,0 +1,114 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CarePlus Hospital | Appointments</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f7fb;
+    color: #263746;
+}
+header {
+    background: #087e8b;
+    color: white;
+    text-align: center;
+    padding: 24px;
+}
+nav { background: #05616b; padding: 12px; text-align: center; }
+nav a { color: white; text-decoration: none; margin: 12px; }
+.container { max-width: 1000px; margin: auto; padding: 20px; }
+h2 { color: #087e8b; }
+.doctors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #0001;
+}
+.card h3 { color: #05616b; }
+.available { color: #168447; font-weight: bold; }
+.announcement {
+    background: #fff3cd;
+    padding: 18px;
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    background: #05616b;
+    color: white;
+    padding: 16px;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>CarePlus Hospital</h1>
+    <p>Your Health, Our Priority</p>
+    <p>Online Doctor Appointment Portal</p>
+</header>
+
+<nav>
+    <a href="#doctors">Doctors</a>
+    <a href="#appointments">Appointments</a>
+    <a href="#announcements">Announcements</a>
+</nav>
+
+<main class="container">
+    <section id="doctors">
+        <h2>Our Doctors</h2>
+        <div class="doctors">
+            <article class="card">
+                <h3>Dr. Ananya Sharma</h3>
+                <p>Specialization: Cardiology</p>
+                <p>Consultation: 9:00 AM - 1:00 PM</p>
+                <p class="available">Available Slots: 5</p>
+            </article>
+            <article class="card">
+                <h3>Dr. Rahul Mehta</h3>
+                <p>Specialization: Dermatology</p>
+                <p>Consultation: 10:00 AM - 2:00 PM</p>
+                <p class="available">Available Slots: 4</p>
+            </article>
+            <article class="card">
+                <h3>Dr. Priya Nair</h3>
+                <p>Specialization: Pediatrics</p>
+                <p>Consultation: 2:00 PM - 6:00 PM</p>
+                <p class="available">Available Slots: 6</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="appointments">
+        <h2>Appointment Information</h2>
+        <div class="card">
+            <p>Choose a doctor and contact our reception to confirm your appointment.</p>
+            <p>Hospital Hours: Monday - Saturday, 9:00 AM - 6:00 PM</p>
+            <p>Phone: 044-5550-1234</p>
+        </div>
+    </section>
+
+    <section id="announcements">
+        <h2>Hospital Announcements</h2>
+        <div class="announcement">
+            <strong>Health Check-up Camp:</strong>
+            Free initial consultations this Saturday. Contact reception for details.
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 CarePlus Hospital | Your Health Matters</p>
+</footer>
+</body>
+</html>
+```
